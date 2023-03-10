@@ -1,0 +1,37 @@
+//1+x+x/2!......
+#include<stdio.h>
+int main(void)
+{
+    int num,i,power=1,x,factorial=1;
+    float sum=0;
+    printf("enter value of n = ");
+    scanf("%d",&num);
+     printf("enter value of x = ");
+    scanf("%d",&x);
+    //power=x;
+    for(i=1;i<=num;i++)
+    {
+        if(i==1)
+        {  
+            sum=1;  
+        }
+    
+        if(i>1)
+        {
+    
+        
+             factorial*=(2*(i-1)-1);
+            
+          //  printf("factorail = %d",factorial);
+            
+             power*=power*x;
+       // printf("%d\n",power);
+      
+              sum+=power/(float)factorial;
+        //printf("%d\n",sum);
+        
+        }
+    }
+    printf("the sum of gaven series is %f",sum);
+
+}
